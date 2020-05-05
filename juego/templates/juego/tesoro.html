@@ -1,0 +1,21 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Treasure Map</title>
+    <link rel="stylesheet" href="{% static '/css/main.css' %}">
+  </head>
+  <body>
+
+    <h1>El antidoto está escondido en una parte del laboratoio.</h1>
+    <img src="{% static '/img/laboratorio.jpg' %}" width="500" height="500" id="map" draggable="false">
+
+    <p id="distance"></p>
+
+    <script src="{% static '/js/helper.js' %}" charset="utf-8"></script>
+    <script src="{% static '/js/game1.js' %}" charset="utf-8"></script>
+    <a class="btn btn-light btn-xl" href="{% url 'users:login' %}">Salir</a>
+  </body>
+  
+</html>

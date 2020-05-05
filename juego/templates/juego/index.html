@@ -1,0 +1,25 @@
+{%load static%}
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Alien Invasion</title>
+  <link rel="stylesheet" href="{%static '/css/game.css'%}" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+
+  <div id='container'>
+    <canvas id='game' width='420' height='580'></canvas>
+  </div>
+  <a href="{% url 'users:login' %}"><button>salir</button></a>
+  <script src="{% static '/js/motor.js' %}"></script>
+  <script src="{% static '/js/game.js' %}"></script>
+  <a href="{% url 'users:login' %}"><button>salir</button></a>
+</body>
+</html>
+
+
