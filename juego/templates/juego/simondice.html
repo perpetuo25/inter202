@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>Simon Dice</title>
+		
+		<style type="text/css">
+		body
+		{
+			text-align: center;
+			background: black;
+			color: white; 
+		}
+		</style>
+	
+	
+	</head>
+<body>
+	
+	<h1>Simon Dice</h1>
+	<canvas width = "250" height = "250" id="rojo"></canvas>
+	<canvas width = "250" height = "250" id="azul"></canvas> <br/>
+	<canvas width = "250" height = "250" id="amarillo"></canvas>
+	<canvas width = "250" height = "250" id="verde"></canvas>
+	<p>Sigue el ritmo presionado los colores <input type="button" id="boton" value="Iniciar"/></p>
+	<script type="text/javascript"></script>
+	inicio();
+	</script>
+	<script src="{% static './js/simon.js' %}"></script>
+</body>
+</html>
