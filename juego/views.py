@@ -24,4 +24,4 @@ def rompecabezas(request):
 	return render(request, template)
 
 def rompecabezas(recuest):
-	template = "juego/memorama.html
+	template = "juego/memorama.html"
