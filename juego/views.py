@@ -25,3 +25,4 @@ def rompecabezas(request):
 
 def memorama(request):
 	template = "juego/memorama.html"
+	return render(request, template)
