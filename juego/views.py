@@ -27,7 +27,7 @@ def memorama(request):
 	template = "juego/memorama.html"
 	return render(request, template)
 
-def ix1(request):
+def tictactoe(request):
 	template = "juego/gato.html"
 	return render(request, template)
 
