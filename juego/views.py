@@ -26,3 +26,11 @@ def rompecabezas(request):
 def memorama(request):
 	template = "juego/memorama.html"
 	return render(request, template)
+
+def ix1(request):
+	template = "juego/gato.html"
+	return render(request, template)
+
+def simon(request):
+	template = "juego/simondice.html"
+	return render(request, template)
