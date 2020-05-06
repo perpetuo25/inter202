@@ -10,5 +10,6 @@ path('space/', views.space, name = "space"),
 path('tesoro/', views.tesoro, name = "tesoro"),
 path('levels/', views.levels, name = "levels"),
 path('rompecabezas/', views.rompecabezas, name = "rompecabezas"),
+path('memorama/', views.memorama, name = "memorama"),
 ]
 

@@ -22,3 +22,6 @@ def levels(request):
 def rompecabezas(request):
 	template = "juego/index2.html"
 	return render(request, template)
+
+def rompecabezas(recuest):
+	template = "juego/memorama.html
