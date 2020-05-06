@@ -18,3 +18,7 @@ def tesoro(request):
 def levels(request):
 	template = "juego/levels.html"
 	return render(request, template)
+
+def rompecabezas(request):
+	template = "juego/index2.html"
+	return render(request, template)
