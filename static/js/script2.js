@@ -43,7 +43,7 @@ new Vue({
             Swal.fire({
                     title: "Perdiste",
                     html: `
-                <img class="img-fluid" src="./img/perdiste.png" alt="Perdiste">
+                <img class="img-fluid" src="/static/img/perdiste.jpg" alt="Perdiste">
                 <p class="h4">Agotaste tus intentos</p>`,
                     confirmButtonText: "Jugar de nuevo",
                     allowOutsideClick: false,
@@ -56,7 +56,7 @@ new Vue({
             Swal.fire({
                     title: "¡Ganaste!",
                     html: `
-                <img class="img-fluid" src="./img/ganaste.png" alt="Ganaste">
+                <img class="img-fluid" src="/static/img/ganaste.jpg" alt="Ganaste">
                 <p class="h4">Muy bien hecho</p>`,
                     confirmButtonText: "Jugar de nuevo",
                     allowOutsideClick: false,
