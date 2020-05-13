@@ -34,3 +34,11 @@ def tictactoe(request):
 def simon(request):
 	template = "juego/simondice.html"
 	return render(request, template)
+
+def encuentraCura(request):
+	template = "juego/encuentraCura.html"
+	return render(request, template)
+
+def sopaLetras(request):
+	template = "juego/sopaLetras.html"
+	return render(request, template)
