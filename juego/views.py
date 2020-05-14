@@ -45,10 +45,9 @@ def sopaLetras(request):
 	template = "juego/sopaLetras.html"
 	return render(request, template)
 
-# #def tictactoe(request):
-#     return render(request, 'gato.html')	
+def inst(request):
+	template = "juego/escrito.html"
+	return render(request, template)
 
-# def simon(request):
-# 	template = "juego/simondice.html"
-# 	return render(request, template)		
+		
 
