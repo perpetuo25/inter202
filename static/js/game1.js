@@ -10,8 +10,8 @@ const WIDTH = 500;
 const HEIGH = 500;
 
 let target = {
-  x: getRandomNumber(WIDTH),
-  y: getRandomNumber(HEIGH)
+  x: 250,
+  y: 100
 };
 
 // click handler
@@ -27,7 +27,7 @@ $map.addEventListener('click', function (e) {
   $distance.innerHTML = `<h1>${distanceHint}</h1>`;
 
   if (distance < 20 ) {
-    alert(`Found the treasure in ${clicks} clicks!`);
-    location.reload();
+    alert(`Lo encontraste!`);
+    location.href="/levels/";
   }
 });

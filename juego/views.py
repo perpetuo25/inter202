@@ -34,3 +34,6 @@ def ix1(request):
 def simon(request):
 	template = "juego/simondice.html"
 	return render(request, template)
+def inst(request):
+	template = "juego/escrito.html"
+	return render(request, template)
