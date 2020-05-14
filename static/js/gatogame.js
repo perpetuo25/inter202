@@ -1,5 +1,5 @@
-const player = "O";
-const computer = "X";
+const player = "💊";
+const computer = "🦠";
 
 let board_full = false;
 let play_board = ["", "", "", "", "", "", "", "", ""];
@@ -62,15 +62,15 @@ const check_match = () => {
 const check_for_winner = () => {
   let res = check_match()
   if (res == player) {
-    winner.innerText = "Winner is player!!";
+    winner.innerText = "¡Ganaste!";
     winner.classList.add("playerWin");
     board_full = true
   } else if (res == computer) {
-    winner.innerText = "Winner is computer";
+    winner.innerText = "Perdiste :(";
     winner.classList.add("computerWin");
     board_full = true
   } else if (board_full) {
-    winner.innerText = "Draw!";
+    winner.innerText = "¡Empate!";
     winner.classList.add("draw");
   }
 };
