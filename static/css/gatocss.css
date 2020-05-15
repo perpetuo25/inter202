@@ -14,9 +14,10 @@
     background: #34495e;
   }
   
-  h1 {
+    h1 {
     font-size: 5rem;
     margin-bottom: 0.5em;
+    color: #eee;
   }
   
   h2 {
@@ -106,7 +107,7 @@
   }
   
   .computerWin {
-    color: red;
+    color: #bc4143;
   }
   
   .draw {
@@ -118,6 +119,7 @@
     h1 {
       font-size: 3rem;
       margin-bottom: 0.5em;
+      color: #eee;
     }
   
     h2 {
