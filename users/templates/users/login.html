@@ -15,13 +15,13 @@
 			margin: 0;
 			padding: 0;
 			height: 100%;
-			background: #7abecc !important;
+			background: #34495e !important;
 		}
 		.user_card {
 			width: 350px;
 			margin-top: auto;
 			margin-bottom: auto;
-			background: #74cfbf;
+			background: #2c5d7a;
 			position: relative;
 			display: flex;
 			justify-content: center;
@@ -45,7 +45,7 @@
 
 		.login_btn {
 			width: 100%;
-			background: #33ccff !important;
+			background: #63b525 !important;
 			color: white !important;
 		}
 		.login_btn:focus {
@@ -56,7 +56,7 @@
 			padding: 0 2rem;
 		}
 		.input-group-text {
-			background: #f7ba5b !important;
+			background: #63b525 !important;
 			color: white !important;
 			border: 0 !important;
 			border-radius: 0.25rem 0 0 0.25rem !important;
@@ -91,7 +91,7 @@
 						
 						<div class="input-group mb-3">
 							<div class="input-group-append">
-								<span class="input-group-text"><i class="fas fa-user"></i></span>
+								<span class="input-group-text"><i class="fas fa-user "></i></span>
 							</div>
 
 							<input type="text" name="username" placeholder="Nombre de usuario..." class="form-control">
@@ -116,8 +116,8 @@
 				{% endfor %}
 		
 				<div class="mt-4">
-					<div class="d-flex justify-content-center links">
-						¿Aún no tienes cuenta? <a href="{% url 'users:register' %}" class="ml-2">Regístrate</a>
+					<div class="d-flex justify-content-center links p-3 mb-2 bg-dark text-white">
+						¿Aún no tienes cuenta? <a href="{% url 'users:register' %}" class="ml-2 text-success">Regístrate</a>
 					</div>
 			
 				</div>

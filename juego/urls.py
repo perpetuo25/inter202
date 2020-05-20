@@ -20,6 +20,6 @@ path('sopaDeLetras/', views.sopaLetras, name = "sopaDeLetras"),
 path('gato/', views.tictactoe, name = "gato"),
 path('simon/', views.simon, name = "simon"),
 path('instruction/', views.inst, name = 'instruction'),
-
+path('', views.home, name = 'index'),
 ]
 

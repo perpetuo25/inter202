@@ -56,7 +56,7 @@ def direc(request):
 
 def logPage(request):
 	if request.user.is_authenticated:
-		return redirect('users:home')
+		return redirect('juego:levels')
 	else:
 
 		if request.method == 'POST':
@@ -73,10 +73,10 @@ def logPage(request):
 					group = request.user.groups.all()[0].name
 
 				if group == 'customer':
-					return redirect('users:home')
+					return redirect('juego:levels')
 
 				if group == 'admin':
-					return redirect('users:homeAdmin')
+					return redirect('juego:levels')
 				
 			else:
 				messages.info(request, 'Usuario o contraseña incorrectos')
@@ -86,7 +86,7 @@ def logPage(request):
 
 @login_required(login_url='users:login')
 def home(request):
-	return render(request, 'users/home.html',{} )
+	return render(request, 'users/.html',{} )
 
 
 @login_required(login_url='users:login')
