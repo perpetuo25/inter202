@@ -87,14 +87,21 @@ function identificar(datos)
 			resultado = false;
 	}
 	
-	if(!resultado)
+		if(maquina.length == 6 && secuenciaHumano.length == 6){
+			alert("Ganaste");
+			maquina.length = 0;
+			secuenciaHumano.length = 0;
+			inicio();
+		
+		}	
+		if(!resultado)
 		{
 			alert("Perdiste :(\n" + "Sobreviviste " + (maquina.length - 1) + " rondas");
 			maquina.length = 0;
 			secuenciaHumano.length = 0;
 			inicio();
 		}	
-
+	
 	if(secuenciaHumano.length == maquina.length && resultado)
 		{
 			secuenciaHumano.length = 0;
