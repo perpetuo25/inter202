@@ -54,6 +54,10 @@ def inst(request):
 def wallyIntro(request):
 	template = "juego/instruccionesWally.html"
 	return render(request, template)
+@login_required(login_url='users:login')
+def letrasIntro(request):
+	template = "juego/instruccionesSopaLetras.html"
+	return render(request, template)
 
 def home(request):
 	template = "juego/home.html"
