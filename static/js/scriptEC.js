@@ -26,7 +26,7 @@ board.addEventListener('mousemove', function(e){
 
 
 wally.addEventListener('click', function(){
-  backToMenu()
+  location.href = "/hisNave/"
 });
 
 function showScore(){

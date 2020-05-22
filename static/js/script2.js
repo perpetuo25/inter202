@@ -1,4 +1,4 @@
-const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
+const MAXIMOS_INTENTOS = 10, // Intentos máximos que tiene el jugador
     COLUMNAS = 4, // Columnas del memorama
     SEGUNDOS_ESPERA_VOLTEAR_IMAGEN = 1, // Por cuántos segundos mostrar ambas imágenes
     NOMBRE_IMAGEN_OCULTA = "/static/img/question.jpg"; // La imagen que se muestra cuando la real está oculta
@@ -51,6 +51,7 @@ new Vue({
                 })
                 .then(this.reiniciarJuego)
         },
+        
         // Mostrar alerta de victoria y reiniciar juego
         indicarVictoria() {
             Swal.fire({
@@ -58,11 +59,12 @@ new Vue({
                     html: `
                 <img class="img-fluid" src="/static/img/ganaste.jpg" alt="Ganaste">
                 <p class="h4">Muy bien hecho</p>`,
-                    confirmButtonText: "Jugar de nuevo",
-                    allowOutsideClick: false,
+                    confirmButtonText: "Avanzar",
+                    allowOutsideClick: true,
                     allowEscapeKey: false,
                 })
-                .then(this.reiniciarJuego)
+                .then(location.href = '/mesGato/')
+
         },
         // Método que indica si el jugador ha ganado
         haGanado() {

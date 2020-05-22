@@ -7,11 +7,11 @@
 
 // treasure coordinates
 const WIDTH = 626;
-const HEIGH = 352;
+const HEIGH = 400;
 
 let target = {
-  x: 50,
-  y: 190
+  x: 550,
+  y: 90
 };
 
 // click handler
@@ -28,6 +28,6 @@ $map.addEventListener('click', function (e) {
 
   if (distance < 25 ) {
     alert(`Lo encontraste en ${clicks} clicks!`);
-    location.href = "/mesMemo/";
+    location.href = "/hisSopa/";
   }
 });
