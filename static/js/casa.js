@@ -28,6 +28,6 @@ $map.addEventListener('click', function (e) {
 
   if (distance < 25 ) {
     alert(`Lo encontraste en ${clicks} clicks!`);
-    location.href = "/mesMemo/";
+    location.href = "/simonhist/";
   }
 });
