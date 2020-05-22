@@ -90,6 +90,8 @@ function testing() {
 	}
 	if(bien_ubicada == 9){
 		win.play();
+		location.href = "/instruction/"
+
 	}
 }
 

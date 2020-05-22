@@ -39,7 +39,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
                         
-                        <a href="{% url 'juego:tesoro' %}"><i class="fa fa-fw fa-play" style="font-size:30px;color:#63b525;"></i>jugar</a>
+                       
                         
                     </ul>
                 </div>
@@ -48,9 +48,9 @@
         <!-- Masthead-->
         
         <!-- About-->
-        <section class="page-section bg-dark text-white ">
+        <section class="page-section bg-dark text-white col-lg-12 ml-auto text-center mb-5 mb-lg-0">
 
-          <button onclick="typeWriter()"><i style="font-size:20px;color:#63b525;"></i>Ver instrucciones</button>
+          <button onclick="typeWriter()"><i style="font-size:20px;color:#63b525;"></i>Abrir mensaje</button>
            <div class="container">
 
                 <hr class="divider my-4 mt-5" />
@@ -59,7 +59,8 @@
 
 			<script>
 			var i = 0;
-			var txt = 'Muy bien, comienza tu primera misión.Lávate las manos antes de comenzar. Encuentra el objeto mas importante en el lavado de manos, veamos que tan rapido puedes hacerlo. Da clic en jugar para iniciar. ';
+			var txt = '17 DE MARZO AÑO 2020, México entra en estado de cuarentena y se aproxima una nueva aventura para ti joven entusiasta.'+ 
+            ' ¿Aceptas el reto mi chavo?';
 			var speed = 40;
 
 				function typeWriter() {
@@ -77,11 +78,16 @@
 
             </div>
         </section>
-        
-        <footer class="bg-light py-5">
+        <div class="col-lg-12 ml-auto text-center mb-5 mb-lg-0">
+
+         <a href="{% url 'juego:acept' %}"><i class="fa fa-fw fa-check" style="font-size:30px;color:#63b525;"></i>Aceptar</a>
+          <a href="{% url 'juego:reject' %}"><i class="fa fa-fw fa-window-close" style="font-size:30px;color:#d90007;"></i>No gracias </a>
+        </div>
+        <!-- <footer class="bg-light py-5">
             <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Guerra Biologica</div></div>
-        </footer>
+        </footer> -->
         <!-- Bootstrap core JS-->
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->

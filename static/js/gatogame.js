@@ -65,10 +65,17 @@ const check_for_winner = () => {
     winner.innerText = "¡Ganaste!";
     winner.classList.add("playerWin");
     board_full = true
+    window.setTimeout(function(){
+
+        // Move to a new location or you can do something else
+        window.location.href = "/mesCasa/";
+
+    }, 3000);
   } else if (res == computer) {
     winner.innerText = "Perdiste :(";
     winner.classList.add("computerWin");
     board_full = true
+
   } else if (board_full) {
     winner.innerText = "¡Empate!";
     winner.classList.add("draw");

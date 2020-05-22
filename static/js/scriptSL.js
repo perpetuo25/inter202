@@ -159,6 +159,12 @@ $(document).ready(function() {
 					// Check if the game is over
 					if(isEndOfGame()) {
 						alert("Good job!");
+						 window.setTimeout(function(){
+
+        // Move to a new location or you can do something else
+      					  window.location.href = "/hisBusca/";
+
+   						 }, 3000);
 					}
 				}
 
@@ -357,5 +363,6 @@ function scratchWord() {
 }
 
 function isEndOfGame(){
+
 	return pos.every(function(o) { return o.start === 0 && o.end === 0; });
 }

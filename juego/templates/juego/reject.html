@@ -37,10 +37,8 @@
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">Guerra Biologica </a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        
-                        <a href="{% url 'juego:tesoro' %}"><i class="fa fa-fw fa-play" style="font-size:30px;color:#63b525;"></i>jugar</a>
-                        
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">       
+                    <a class="btn btn-light btn-sm" href="https://www.youtube.com/watch?v=xyAOj_g4NMI">Salir</a>
                     </ul>
                 </div>
             </div>
@@ -48,18 +46,19 @@
         <!-- Masthead-->
         
         <!-- About-->
-        <section class="page-section bg-dark text-white ">
+        <section class="page-section bg-dark text-white col-lg-12 ml-auto text-center mb-5 mb-lg-0">
 
-          <button onclick="typeWriter()"><i style="font-size:20px;color:#63b525;"></i>Ver instrucciones</button>
+          <button onclick="typeWriter()"><i style="font-size:20px;color:#63b525;"></i>Instrucciones</button>
            <div class="container">
 
                 <hr class="divider my-4 mt-5" />
                 <div class="row">
+                <span id="countdown"></span>
                 <p id="demo"></p>
 
 			<script>
 			var i = 0;
-			var txt = 'Muy bien, comienza tu primera misión.Lávate las manos antes de comenzar. Encuentra el objeto mas importante en el lavado de manos, veamos que tan rapido puedes hacerlo. Da clic en jugar para iniciar. ';
+			var txt = '¡Está bien, lávate las manos, no te toques la cara! #QuédateEnCasa';
 			var speed = 40;
 
 				function typeWriter() {
@@ -69,25 +68,31 @@
     			setTimeout(typeWriter, speed);
  				 }
 			}
-			</script>
-			
-                     
+
+            
+			</script>   
 
                 </div>
 
             </div>
         </section>
-        
-        <footer class="bg-light py-5">
+        <div class="col-lg-12 ml-auto text-center mb-5 mb-lg-0">
+
+         <!-- <a href="{% url 'juego:rompecabezas'%}"><i class="fa fa-fw fa-play" style="font-size:30px;color:#63b525;"></i>Aceptar</a> -->
+          
+        </div>
+        <!-- <footer class="bg-light py-5">
             <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Guerra Biologica</div></div>
-        </footer>
+        </footer> -->
         <!-- Bootstrap core JS-->
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
         <!-- Core theme JS-->
+
         <script src="{%static 'js/scripts.js'%}"></script>
     </body>
 </html>
